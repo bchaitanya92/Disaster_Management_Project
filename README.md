@@ -1,72 +1,133 @@
 
-# Natural-Disaster-Prediction-Using-Machine-Learning
+# 🌍 Natural Disaster Prediction using ML
 
-![DALL·E 2024-06-10 16 03 46 - A simple and clean image representing Natural Disaster Prediction using Machine Learning  The image should include minimalist icons of natural disaste](https://github.com/ManishaLagisetty/Natural-Disaster-Prediction-Using-Machine-Learning/assets/147951099/a3453f80-4973-4d50-a84e-c41f9ba7c5a0)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Scikit--Learn-F7931A?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn">
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+  <img src="https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+  <img src="https://img.shields.io/badge/Matplotlib-007ACC?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib">
+  <img src="https://img.shields.io/badge/Seaborn-2B2D42?style=for-the-badge&logo=seaborn&logoColor=white" alt="Seaborn">
+</p>
 
+<p align="center">
+  <b>Predicting natural disasters using machine learning algorithms.</b><br>
+  <i>From data preprocessing to ensemble learning, this project provides an end-to-end pipeline for disaster prediction.</i>
+</p>
 
-## Description
-This project focuses on predicting natural disasters using machine learning techniques. It includes data collection, preprocessing, model development, evaluation, tuning, and ensemble techniques.
+---
 
-## Abstract
-This Machine Learning project, entitled "Sustainable Futures through Natural Disaster Prediction," embarks on a transformative quest towards promoting heightened resilience and sustainable practices globally. The primary goal of this project is to promote the preservation of sustainability. By employing predictive techniques,strive to reduce the detrimental impact that disasters have on ecosystems, natural resources, and the environment. The objective aligns with worldwide endeavors in addressing climate change. Through machine learning models such as K-means neighbor, Random Forest, Support Vector Machine (SVM), and Naive Bayes are used as early warning indicators, thus facilitating proactive approaches for disaster preparedness and response strategies. By thoroughly analyzing historical data on diverse types of calamities such as earthquakes, hurricanes, floods, and wildfires and by employing feature engineering, and machine learning algorithms, aim is to develop precise prediction models that offer practical insights for effective action. 
+## 🧾 Project Overview
 
-<img width="741" alt="Pasted Graphic" src="https://github.com/ManishaLagisetty/Natural-Disaster-Prediction-Using-Machine-Learning/assets/147951099/edb964c7-d910-4d73-ace3-7d884ccb9112">
+This repository focuses on building machine learning models to predict various natural disasters by analyzing historical data. The pipeline includes steps from exploratory data analysis (EDA) and feature engineering to advanced ensemble models and deployment-ready solutions.
 
-![image](https://github.com/ManishaLagisetty/Natural-Disaster-Prediction-Using-Machine-Learning/assets/147951099/76a7bf7b-d67b-427e-af73-71bcf07d57e8)
+---
 
+## 🗃️ Repository Structure
 
-#### Technology Stack:
-Languages: Python <br>
-Technology: Machine Learning <br>
-Libraries: Pandas, Scikit-Learn, Numpy, Seaborn, Matplotlib <br>
-Tools: Jupyter Notebook, GitHub <br>
-Data Sources: Historical disaster data <br>
+```
+Natural-Disaster-Prediction-Using-Machine-Learning/
+│
+├── Datasets/
+│   ├── natural_disasters_dataset.csv
+│   ├── preprocessed_data.csv
+│   └── new_unseen_dataset.csv
+│
+├── Code/
+│   ├── Complete_code.ipynb
+│   ├── Complete_code.py
+│   ├── Testing_the_saved_model.ipynb
+│   └── Testing_the_saved_model.py
+│
+├── Reports/
+│   ├── Project_Report.pdf
+│   ├── Industry_CaseStudy.pdf
+│   └── Significant_paper_slides.pdf
+│
+├── Models/
+│   └── [Joblib Saved Model - Link](https://drive.google.com/drive/u/1/folders/1ND3XnuUrvSIkmtFcO-zI6ovv2ykQyWp3)
+│
+└── README.md
+```
 
-#### Technical Report
-Project_Report.pdf
+---
 
-#### Industry Case study
-Industry_CaseStudy.pd
+## 🔍 Key Components & Techniques
 
-#### Significant Paper Blog
-Significant_paper_slides.pdf
+| **Phase** | **Details** |
+|----------|-------------|
+| **1. Data Collection** | Acquired disaster datasets from Kaggle containing timestamps, location, and event types. |
+| **2. EDA** | Performed detailed exploratory data analysis with visualizations to understand distribution and correlations. |
+| **3. Preprocessing** | Handled missing data, encoded categorical variables, and created the `preprocessed_data.csv`. |
+| **4. Feature Selection** | Selected relevant features using Mutual Information and domain knowledge. |
+| **5. Model Building** | Implemented Random Forest, SVM, K-NN, and Naive Bayes classifiers. |
+| **6. Evaluation** | Used Accuracy, Precision, Recall, and F1-Score to compare models. |
+| **7. Data Balancing** | Applied sampling techniques and built ensemble classifiers (Soft/Hard Voting). |
+| **8. Hyperparameter Tuning** | Optimized model parameters using GridSearchCV. |
+| **9. Deployment** | Saved model using Joblib and tested it on unseen data. |
 
-#### CSV file
-natural_disasters_dataset.csv 
+---
 
-#### Preprocessed dataset
-preprocessed_data.csv
+## 🚀 Getting Started
 
-#### Code Implementation 
-Complete_code.ipynb <br>
-Complete_code.py
+### 📦 Requirements
 
-#### New unseen dataset 
-new_unseen_dataset.csv 
+- Python 3.8+
+- Libraries: `numpy`, `pandas`, `scikit-learn`, `seaborn`, `matplotlib`, `joblib`
 
-#### Testing saved model
-Testing_the_saved_model.ipynb <br>
-Testing_the_saved_model.py
+### 🔧 Setup Instructions
 
-#### Saved Model Joblib drive link 
-https://drive.google.com/drive/u/1/folders/1ND3XnuUrvSIkmtFcO-zI6ovv2ykQyWp3
+```bash
+git clone https://github.com/your-username/Natural-Disaster-Prediction-Using-Machine-Learning.git
+cd Natural-Disaster-Prediction-Using-Machine-Learning
 
-#### Table of Contents
+# (Optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-1.Data: Obtained a diverse dataset of historical natural disasters from Kaggle. Metadata provided information such as timestamps, location details, and event characteristics
+pip install -r requirements.txt  # or install manually
+```
 
-2.Exploratory Data Analysis (EDA) : Visualized and interpreted using histograms, bar graphs, and time series analyses during a collaborative EDA. Goal was to identify distribution patterns, correlations, outliers, and intricate details related to probable disaster situations.We have performed EDA before data preprocessing.
+### 🧪 Running the Model
 
-3.Data Preprocessing :Checked for missing values and handled them by imputing the Numerical values with Mean and Categorical values with Mode and encoded categorical variables.Performed EDA after data preprocessing to gain futhur insights about the data.
+```bash
+cd Code/
+python Complete_code.py
 
-4.Feature Selection: Based on Mutal Information and Domain knowledge,selected the Features and have been loaded into preproceesed_data.csv file.We have selected 6 features and one target variable which is Diaster Type.
+# or test the deployed model
+python Testing_the_saved_model.py
+```
 
-5.Model Development: Chosen four machine learning techniques to best match the distinctive characteristics of natural disasters in order to properly predict them.Four different machine learning models are Random Forest, SVM, K-NN, and Naive Bayes.
+---
 
-6.Model Evaluation: Perfomred evaluation metrics such as Accuracy,F1 Score,Recall and precision.
+## 📊 Model Performance Snapshot
 
-7.Balacning the data: Balanced the data and performed the model developemnt and again to check the performnace of the chosen models. Implemented soft and hard voting ensemble techniques.
+| **Model**     | **Accuracy** | **F1 Score** | **Precision** | **Recall** |
+|---------------|--------------|--------------|----------------|-------------|
+| Random Forest | ✅ High       | ✅ High       | ✅ High         | ✅ High      |
+| SVM           | Moderate     | Moderate     | Moderate        | Moderate     |
+| K-NN          | Variable     | Moderate     | Moderate        | Low          |
+| Naive Bayes   | Lower        | Lower        | Moderate        | Moderate     |
 
-8.Hyperparameter Tuning: Conducted hyperparameter tuning using GridSearchCV and also done visualization of Performance metrics using Grouped Bar chart. 
+> Ensemble techniques improved performance across all metrics.
 
-9.Next model deployment was done using Joblib Approach and tested on new unseen data.
+---
+
+## 👨‍💻 Author
+
+Developed by:
+
+**B. Chaitanya**  
+*Data Science & Machine Learning Enthusiast*  
+GitHub: [bchaitanya92](https://github.com/bchaitanya92)  
+LinkedIn: [BOURISETTI CHAITANYA](https://www.linkedin.com/in/b-chaitanya)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. Feel free to use, modify, and share with attribution.
+
+---
+
+🎉 *Explore. Predict. Protect. Together, we build a safer tomorrow with ML.*
